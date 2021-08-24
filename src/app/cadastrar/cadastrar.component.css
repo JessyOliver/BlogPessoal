@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: linear-gradient(rgba(253, 253, 253, 0.4), rgba(253, 253, 253, 0.4)), url("https://i.imgur.com/FGrvS6j.jpg");
+    background-image: linear-gradient(rgba(253, 253, 253, 0.4), rgba(0, 0, 0, 0.4)), url("https://i.imgur.com/FGrvS6j.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -40,4 +40,5 @@ label {
 
 button {
     font-family: 'Cinzel', serif;
+    color: aliceblue;
 }
