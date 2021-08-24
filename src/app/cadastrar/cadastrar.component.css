@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Nosifer&display=swap');
+
+/*edit conteudo*/
+
+*margin {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(rgba(253, 253, 253, 0.4), rgba(253, 253, 253, 0.4)), url("https://i.imgur.com/FGrvS6j.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#img-bg {
+    background-image: linear-gradient(rgba(80, 3, 3, 0.4), rgba(19, 18, 18, 0.4)), url("https://i.imgur.com/4yAAXqS.gif");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    /* font-family: 'Cinzel', serif; */
+    font-family: 'Nosifer', cursive;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-shadow: 0.1em 0.1em rgba(61, 3, 3, 0.323);
+    margin-bottom: 2rem;
+}
+
+label {
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: black;
+}
+
+button {
+    font-family: 'Cinzel', serif;
+}
