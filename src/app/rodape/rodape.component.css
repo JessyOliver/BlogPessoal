@@ -23,7 +23,8 @@ body {
 
 .footerfundo2 {
     background: linear-gradient(rgba(55, 1, 1, 0.604), rgba(0, 0, 0, 0.652));
-    font-family: 'Cinzel', serif;
+    font-family: 'Arial', 'Cinzel', serif;
+    font-size: 0.6rem;
 }
 
 ul.social-network {
