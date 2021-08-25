@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lilita+One&display=swap');
 
 /*edit conteudo*/
 
@@ -9,7 +11,7 @@
 }
 
 body {
-    background-image: linear-gradient(rgba(253, 253, 253, 0.4), rgba(0, 0, 0, 0.4)), url("https://i.imgur.com/FGrvS6j.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://i.imgur.com/FGrvS6j.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -26,19 +28,34 @@ h1 {
     /* font-family: 'Cinzel', serif; */
     font-family: 'Nosifer', cursive;
     font-weight: bold;
-    color: rgb(0, 0, 0);
-    text-shadow: 0.1em 0.1em rgba(61, 3, 3, 0.323);
+    color: rgb(255, 255, 255);
+    text-shadow: 0.1em 0.1em rgba(255, 0, 0, 0.474);
     margin-bottom: 2rem;
 }
 
 label {
-    font-family: 'Cinzel', serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    letter-spacing: .1rem;
+    width: 15rem;
     font-weight: bold;
-    font-size: 1rem;
-    color: black;
+    /* background: linear-gradient(rgba(80, 3, 3, 0.4), rgba(19, 18, 18, 0.4)); */
+    /* text-align: center; */
+    /* text-shadow: #150000 -1px -1px; */
 }
 
-button {
-    font-family: 'Cinzel', serif;
-    color: aliceblue;
+.button1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    font-weight: bold;
+    color: rgb(252, 252, 252);
+    border: 2px solid rgb(202, 3, 3);
+}
+
+.button2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    font-weight: bold;
+    color: rgb(252, 252, 252);
+    border: 2px solid rgb(3, 202, 43);
 }
