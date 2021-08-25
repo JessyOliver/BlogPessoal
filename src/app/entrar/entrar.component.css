@@ -34,14 +34,31 @@ body {
     -moz-box-sizing: border-box;
 }
 
+.caixaLogin .campo input:focus {
+    outline: none;
+}
+
 .caixaLogin .campo {
     position: relative;
+}
+
+input:focus {
+    outline: 0;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
 }
 
 .caixaLogin .campo label {
     position: absolute;
     top: 0;
     left: 0;
+    outline: none;
     padding: 10px 0;
     font-size: 16px;
     color: #ffffff;
@@ -54,8 +71,9 @@ body {
 .caixaLogin .campo input:valid~label {
     top: -20px;
     left: 0;
-    color: rgba(255, 183, 0, 0.412);
+    color: #ffffff;
     font-size: 12px;
+    outline: none;
 }
 
 .checkbox2 {
@@ -76,15 +94,6 @@ h1 {
     color: rgb(255, 255, 255);
     /* text-shadow: 0.1em 0.1em rgba(255, 183, 0, 0.412); */
 }
-
-
-/* label {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #ffffff;
-    letter-spacing: .1rem;
-    width: 15rem;
-    font-weight: bold;
-} */
 
 p {
     font-family: 'Cinzel', serif;
