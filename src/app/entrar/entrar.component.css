@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Nosifer&display=swap');
 *margin {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://i.imgur.com/FGrvS6j.jpg");
+    background-image: linear-gradient(rgba(182, 182, 182, 0.159), rgba(182, 182, 182, 0.138)), url("https://i.imgur.com/FGrvS6j.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -12,7 +13,7 @@ body {
 .caixaLogin {
     background: linear-gradient(rgba(33, 1, 1, 0.481), rgba(136, 2, 2, 0.59));
     padding: 1rem;
-    border-radius: 2rem 1rem 2rem 1rem;
+    border-radius: 0 15rem 0 15rem;
     box-shadow: 0 2rem 2rem;
     position: relative;
 }
@@ -69,7 +70,7 @@ body {
 
 /*ja estava*/
 
-.caixaLogin h1 {
+h1 {
     /* font-family: 'Cinzel', serif; */
     font-family: 'Nosifer', cursive;
     color: rgb(255, 255, 255);

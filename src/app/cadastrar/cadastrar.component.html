@@ -1,45 +1,51 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6" id="img-bg"></div>
+            <div class="col-md-6 " id="img-bg"></div>
             <div class="col-md-6 mt-5 mb-5">
                 <div class="row d-flex justify-content-center">
 
-                    <div class="col-md-10">
+                    <div class="col-md-10 caixaLogin">
                         <h1 class="text-center"> CADASTRO </h1>
 
-                        <div class="form-group">
-                            <label for="nome"> Nome:</label>
-                            <input type="text" placeholder="Nome" id="nome" class="form-control" />
+                        <div class="form-group campo">
+
+                            <input type="text" placeholder="" id="nome" class="form-control" /><label for="nome"> Nome:</label>
                         </div>
 
-                        <div class=" form-group ">
+                        <div class=" form-group campo ">
+
+                            <input type="text " placeholder="" id="usuario " class="form-control" />
                             <label for="usuario "> Usuário:</label>
-                            <input type="text " placeholder="Seu usuário " id="usuario " class="form-control" />
                         </div>
 
-                        <div class=" form-group ">
+                        <div class=" form-group campo">
+                            <input type="text " placeholder="" id="foto " class="form-control" />
                             <label for="foto "> Link da Foto:</label>
-                            <input type="text " placeholder="Link da sua foto " id="foto " class="form-control" />
+
                         </div>
 
-                        <div class=" form-group ">
+                        <div class=" form-group campo">
+                            <input type="password " placeholder=" " id="suario " class="form-control " />
                             <label for="senha "> Senha:</label>
-                            <input type="password " placeholder="Senha " id="suario " class="form-control " />
+
                         </div>
 
-                        <div class="form-group ">
+                        <div class="form-group campo">
+                            <input type="password" placeholder=" " id="confirSenha " class="form-control " />
                             <label for="confirSenha "> Confirmar senha:</label>
-                            <input type="password" placeholder="Confirme sua senha " id="confirSenha " class="form-control " />
+
                         </div>
 
-                        <div class="form-group ">
-                            <label for="dataNasc"> Data de Nascimento:</label>
-                            <input class="form-control" type="date" id="dataNasc" name="dataNasc" />
+                        <div class="form-group  ">
+                            <label for="dataNasc " class="mb-2 text-light"> Data de Nascimento:</label>
+                            <input class="form-control " type="date" id="dataNasc" name="dataNasc" />
+
+
                         </div>
 
 
-                        <div class="form-group ">
+                        <div class="form-group text-light mt-4">
                             <label for="tipo "> Tipo de Usuário:</label>
                             <select class="form-control " name="tipo " id="tipo ">
                                 <option >Selecione um tipo de usuário</option>
@@ -48,8 +54,8 @@
                             </select>
                         </div>
 
-                        <div class="d-flex justify-content-around mt-5 ">
-                            <button type="submit " class="btn btn-outline-danger px-5 button1">Cancelar </button>
+                        <div class="d-flex justify-content-around mt-4 mb-3">
+                            <button type="submit " class="btn btn-outline-danger px-5 button1" routerLink="/entrar">Cancelar </button>
                             <button type="submit " class="btn btn-outline-success px-5 button2">Cadastrar</button>
 
                         </div>
