@@ -66,7 +66,7 @@ input:focus {
     padding: 10px 0;
     font-size: 16px;
     color: #ffffff;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Cinzel', serif;
     pointer-events: none;
     transition: .5s;
 }
@@ -86,13 +86,13 @@ input:focus {
 input,
 select {
     color: #ffffff;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Cinzel', serif;
     background-color: transparent;
 }
 
 input:focus {
-    color: #ffffff;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #290000;
+    font-family: 'Cinzel', serif;
     background-color: transparent;
     /*campo*/
     box-shadow: 0 0 0 0;
@@ -110,17 +110,15 @@ h1 {
 }
 
 .button1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Cinzel', serif;
     background-color: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-    font-weight: bold;
     color: #ffffff;
     border: 1px solid rgb(202, 3, 3);
 }
 
 .button2 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Cinzel', serif;
     background-color: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-    font-weight: bold;
     color: #ffffff;
     border: 1px solid rgb(3, 202, 43);
 }

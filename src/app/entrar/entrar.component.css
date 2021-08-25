@@ -62,7 +62,7 @@ select:focus {
     padding: 10px 0;
     font-size: 16px;
     color: #ffffff;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Cinzel', serif;
     pointer-events: none;
     transition: .5s;
 }
@@ -95,7 +95,8 @@ h1 {
     /* text-shadow: 0.1em 0.1em rgba(255, 183, 0, 0.412); */
 }
 
-p {
+p,
+label {
     font-family: 'Cinzel', serif;
     font-size: 1rem;
     color: rgb(255, 255, 255);
@@ -106,13 +107,13 @@ hr {
 }
 
 a {
+    font-family: 'Cinzel', serif;
     color: rgb(255, 183, 0);
 }
 
 .button1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Cinzel', serif;
     background-color: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-    font-weight: bold;
     color: rgb(252, 252, 252);
     border: 1px solid rgb(255, 183, 0);
 }
