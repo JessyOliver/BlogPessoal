@@ -6,6 +6,10 @@
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
+
+    //ativando campos da model
+    "strictPropertyInitialization": false,
+    //fim ativação
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
