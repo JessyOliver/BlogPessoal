@@ -6,6 +6,7 @@ import { RodapeComponent } from './rodape/rodape.component';
 
 import {  NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { InicioComponent } from './inicio/inicio.component';
 
 const routes: Routes = [
 
@@ -15,6 +16,8 @@ const routes: Routes = [
   //testando menu rodape
   {path:'menu', component:MenuComponent}, 
   {path:'rodape', component:RodapeComponent},
+
+  {path:'inicio', component:InicioComponent },
 
   //redirecionando para uma pagina especifica
   {path:'entrar', component: EntrarComponent},
