@@ -1,0 +1,102 @@
+.caixaTexto {
+    background-image: linear-gradient(rgba(253, 0, 0, 0.213), rgba(17, 0, 0, 0.227)), url("https://i.imgur.com/2coj17v.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+a {
+    font-family: 'Cinzel', serif;
+    color: rgb(255, 183, 0);
+}
+
+.ediTitulo {
+    margin-top: 3rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    font-family: 'Nosifer', cursive;
+}
+
+h5 {
+    color: #fff;
+    font-weight: normal;
+    font-family: 'Cinzel', serif;
+}
+
+
+/*campo transparente*/
+
+.caixaTexto .campo input {
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    background: transparent;
+    color: #ffffff;
+    letter-spacing: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 30px;
+    font-family: 'Cinzel', serif;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.caixaTexto .campo {
+    position: relative;
+}
+
+input {
+    color: #ffffff;
+    font-family: 'Cinzel', serif;
+    background-color: transparent;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+
+/*editando button*/
+
+.button2 {
+    font-size: 11pt;
+    font-family: 'Cinzel', serif;
+    background-color: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    color: rgb(252, 252, 252);
+    border: 1px solid rgb(255, 183, 0);
+}
+
+.button2:hover {
+    background-color: rgb(36, 0, 0);
+    color: rgb(255, 183, 0);
+    border: 1px solid rgb(255, 183, 0);
+}
+
+
+/*segundo titulo*/
+
+.ediTitulo2 {
+    margin-top: 3rem;
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 0.1em 0.1em rgba(67, 0, 0, 0.85);
+    font-weight: normal;
+    font-family: 'Nosifer', cursive;
+}
+
+
+/*tabela*/
+
+.tablecor {
+    color: rgb(255, 183, 0);
+    background: linear-gradient(rgba(70, 0, 0, 0.727), rgba(26, 0, 0, 0.59));
+    padding: 1rem;
+    position: relative;
+    font-family: 'Cinzel', serif;
+}

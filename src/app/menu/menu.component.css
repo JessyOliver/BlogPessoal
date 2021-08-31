@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Nosifer&display=swap');
 
-/*coomponentes extras*/
-
-*margin {
+/* coomponentes extras *margin {
     margin: 0;
     padding: 0;
 }
@@ -12,13 +10,13 @@ body {
     background-image: linear-gradient(rgba(182, 182, 182, 0.159), rgba(182, 182, 182, 0.138)), url("https://i.imgur.com/FGrvS6j.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
+} */
 
 
 /*conteudo edit pagina*/
 
 .menufundo {
-    background: linear-gradient(rgba(223, 220, 220, 0.096), rgba(182, 182, 182, 0.09));
+    background: linear-gradient(rgba(39, 0, 0, 0.035), rgba(255, 123, 0, 0.138));
 }
 
 p,

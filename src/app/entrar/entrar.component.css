@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Nosifer&display=swap');
-*margin {
+
+/* *margin {
     margin: 0;
     padding: 0;
 }
@@ -8,7 +9,7 @@ body {
     background-image: linear-gradient(rgba(182, 182, 182, 0.159), rgba(182, 182, 182, 0.138)), url("https://i.imgur.com/FGrvS6j.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
+} */
 
 .caixaLogin {
     background: linear-gradient(rgba(33, 1, 1, 0.481), rgba(136, 2, 2, 0.59));
@@ -48,7 +49,8 @@ input:focus {
 
 textarea:focus,
 input:focus,
-select:focus {
+select:focus,
+.button1 {
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
@@ -111,10 +113,26 @@ a {
     color: rgb(255, 183, 0);
 }
 
-.button1 {
+
+/* .button1 {
     font-family: 'Cinzel', serif;
     background-color: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
     color: rgb(252, 252, 252);
+    border: 1px solid rgb(255, 183, 0);
+} */
+
+.button1 {
+    font-size: 11pt;
+    font-family: 'Cinzel', serif;
+    background-color: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    color: rgb(252, 252, 252);
+    border: 1px solid rgb(255, 183, 0);
+}
+
+.button1:hover {
+    font-family: 'Cinzel', serif;
+    background-color: rgb(36, 0, 0);
+    color: rgb(255, 183, 0);
     border: 1px solid rgb(255, 183, 0);
 }
 

@@ -1,5 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
 
+*margin {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(rgba(182, 182, 182, 0.159), rgba(182, 182, 182, 0.138)), url("https://i.imgur.com/FGrvS6j.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+.fs-54 {
+    font-size: 44pt;
+}
+
+.fs-18 {
+    font-size: 18pt;
 }

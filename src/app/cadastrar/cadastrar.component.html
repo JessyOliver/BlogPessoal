@@ -14,30 +14,30 @@
                             <label for="nome"> Nome:</label>
                         </div>
 
-                        <div class="form-group campo ">
-                            <input type="email" id="usuario" class="form-control" required [(ngModel)]="usuarioCad.usuario" />
-                            <label for="usuario"> Usuário:</label>
+                        <div class="form-group campo">
+                            <input type="email" id="usuarioCads" class="form-control" required [(ngModel)]="usuarioCad.usuario" />
+                            <label for="usuarioCads"> Usuário:</label>
                         </div>
 
                         <div class=" form-group campo">
-                            <input type="text" id="foto" class="form-control " required [(ngModel)]="usuarioCad.imagem_perfil" />
+                            <input type="text" id="foto" class="form-control" required [(ngModel)]="usuarioCad.imagem_perfil" />
                             <label for="foto"> Link da Foto:</label>
 
                         </div>
 
-                        <div class=" form-group campo ">
+                        <div class=" form-group campo">
                             <input type="password" id="senha" class="form-control " required (input)='confirmSenha($event)' />
                             <label for="senha"> Senha:</label>
 
                         </div>
 
-                        <div class="form-group campo ">
+                        <div class="form-group campo">
                             <input type="password" id="confirSenha" class="form-control " required [(ngModel)]="usuarioCad.senha" />
                             <label for="confirSenha "> Confirmar senha:</label>
 
                         </div>
 
-                        <div class="form-group ">
+                        <div class="form-group">
                             <label for="dataNasc" class="mb-2 textoColor "> Data de Nascimento:</label>
                             <input class="form-control " type="date" id="dataNasc" name="dataNasc" [(ngModel)]="usuarioCad.dataNascimento" />
 
@@ -46,7 +46,7 @@
 
 
                         <div class="form-group textoColor mt-4 ">
-                            <label for="tipo "> Tipo de Usuário:</label>
+                            <label for="tipo"> Tipo de Usuário:</label>
                             <select class="form-control" name="tipo" id="tipo" (change)="tipoUser($event)">
                                 <option >Selecione um tipo de usuário</option>
                                 <option value="normal">Normal</option>

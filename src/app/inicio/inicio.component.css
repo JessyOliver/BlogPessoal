@@ -5,6 +5,8 @@
 
 /*edit conteudo*/
 
+
+/* 
 *margin {
     margin: 0;
     padding: 0;
@@ -14,12 +16,203 @@ body {
     background-image: linear-gradient(rgba(182, 182, 182, 0.159), rgba(182, 182, 182, 0.138)), url("https://i.imgur.com/FGrvS6j.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
+} */
+
+.caixaTexto {
+    background-image: linear-gradient(rgba(253, 0, 0, 0.508), rgba(17, 0, 0, 0.953)), url("https://i.imgur.com/AWSuOV9.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
-.fs-54 {
-    font-size: 44pt;
+.caixaTexto h1 {
+    color: #fff;
+    font-family: 'Cinzel', serif;
 }
 
-.fs-18 {
-    font-size: 18pt;
+.caixaTexto h5 {
+    color: #fff;
+    font-weight: normal;
+    font-family: 'Fjalla One', serif, 'Lilita One';
+}
+
+
+/*editando as cores e efeitos do botão*/
+
+.button1 {
+    font-size: 11pt;
+    font-family: 'Cinzel', serif;
+    background-color: rgb(36, 0, 0);
+    color: rgb(255, 183, 0);
+    border: 1px solid rgb(255, 183, 0);
+}
+
+.button1:hover {
+    color: rgb(252, 252, 252);
+    border: 1px solid rgb(255, 183, 0);
+}
+
+.button2 {
+    font-size: 11pt;
+    font-family: 'Cinzel', serif;
+    background-color: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    color: rgb(252, 252, 252);
+    border: 1px solid rgb(255, 183, 0);
+}
+
+.button2:hover {
+    background-color: rgb(36, 0, 0);
+    color: rgb(255, 183, 0);
+    border: 1px solid rgb(255, 183, 0);
+}
+
+
+/*editando as naves*/
+
+.corNav {
+    font-family: 'Fjalla One', serif, 'Lilita One';
+    background-color: rgb(36, 0, 0);
+    color: rgb(255, 183, 0);
+    font-size: 12pt;
+    border: 1px solid rgb(255, 183, 0);
+}
+
+.corNav:hover {
+    background-color: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    color: rgb(255, 183, 0);
+    background: rgb(36, 0, 0);
+}
+
+.ediText {
+    margin-top: 3rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 0.1em 0.1em rgba(67, 0, 0, 0.85);
+    font-weight: normal;
+    font-family: 'Nosifer', cursive;
+}
+
+
+/*caixa modal*/
+
+.colorCaixa {
+    color: #fff;
+    background: linear-gradient(rgba(70, 0, 0, 0.727), rgba(26, 0, 0, 0.59));
+    padding: 1rem;
+    border-radius: 0;
+    box-shadow: 0 2rem 2rem;
+    position: relative;
+}
+
+.ediTitulo {
+    margin-top: 3rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    font-family: 'Nosifer', cursive;
+}
+
+
+/*deixando as labs tranparentes*/
+
+.caixaLogin .campo input {
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    background: transparent;
+    color: #ffffff;
+    letter-spacing: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 30px;
+    font-family: 'Cinzel', serif;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.caixaLogin .campo {
+    position: relative;
+}
+
+.caixaLogin .campo label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Cinzel', serif;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.caixaLogin .campo input:focus~label,
+.caixaLogin .campo input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+
+/*deixando os campos data e select tranparente*/
+
+.textoColor,
+textarea,
+input,
+select {
+    color: #ffffff;
+    font-family: 'Cinzel', serif;
+    background-color: transparent;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+a {
+    font-family: 'Cinzel', serif;
+    color: rgb(255, 183, 0);
+}
+
+
+/*bões modal*/
+
+.buttoncli1 {
+    font-size: 11pt;
+    font-family: 'Cinzel', serif;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(202, 3, 3);
+}
+
+.buttoncli1:hover {
+    font-family: 'Cinzel', serif;
+    background-color: rgb(36, 0, 0);
+    color: rgb(255, 183, 0);
+    border: 1px solid rgb(202, 3, 3);
+}
+
+.buttoncli2 {
+    font-size: 11pt;
+    font-family: 'Cinzel', serif;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(3, 202, 43);
+}
+
+.buttoncli2:hover {
+    font-family: 'Cinzel', serif;
+    background-color: rgb(36, 0, 0);
+    color: rgb(255, 183, 0);
+    border: 1px solid rgb(3, 202, 43);
+}
+
+button:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
 }
