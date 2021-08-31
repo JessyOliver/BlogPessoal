@@ -21,6 +21,7 @@ export class EntrarComponent implements OnInit {
   entrar(){
 
     this.auth.entrar(this.usuarioLogin).subscribe((resp: UsuarioLogin)=>{
+      
       this.usuarioLogin = resp
 
       environment.token = this.usuarioLogin.token
@@ -33,11 +34,11 @@ export class EntrarComponent implements OnInit {
 
       environment.id = this.usuarioLogin.id
 
-  console.log( environment.token )    
-  console.log( environment.nome )      
+  // console.log( environment.token )    
+  // console.log( environment.nome )      
 
-  console.log( environment.usuario ) 
-  console.log( environment.id )      
+  // console.log( environment.usuario ) 
+  // console.log( environment.id )      
      
 
 

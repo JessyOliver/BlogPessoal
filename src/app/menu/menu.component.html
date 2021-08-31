@@ -8,10 +8,10 @@
             <ul class="navbar-nav mr-auto d-flex align-items-center">
                 <li class="nav-item active">
 
-                    <img src="https://i.imgur.com/2RFOpwL.jpg" alt="imagem do usuario" width="50px" height="50px" class="img-fluid rounded-circle">
+                    <img src="{{foto_perfil }}" alt="imagem do usuario" width="50px" height="50px" class="img-fluid rounded-circle">
                 </li>
                 <li class=" nav-item pl-3">
-                    <p class="m-0 font-weight-bold  "> Nome do usuario(a)</p>
+                    <p class="m-0 font-weight-bold  "> {{nome}}</p>
                 </li>
                 <li class=" nav-item pl-3">
                     <a href="">
@@ -24,8 +24,7 @@
 
             <ul class="navbar-nav ml-auto d-flex align-items-center">
                 <li class="nav-item active">
-                    <a class="m-0 font-weight-bold  ">Sair <i class="fa fa-sign-out pl-1" aria-hidden="true"></i>
-                        <!-- routerLink="/entrar" -->
+                    <a class="m-0 font-weight-bold " (click)='sair()'>Sair <i class="fa fa-sign-out pl-1" aria-hidden="true"></i>
                     </a>
                 </li>
             </ul>
