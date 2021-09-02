@@ -71,7 +71,15 @@ body {
 
 .corNav {
     font-family: 'Fjalla One', serif, 'Lilita One';
-    background-color: rgb(36, 0, 0);
+    background-color: rgba(36, 0, 0, 0.686);
+    color: rgb(255, 183, 0);
+    font-size: 12pt;
+    border: 1px solid rgb(255, 183, 0);
+}
+
+.corNav.active {
+    font-family: 'Fjalla One', serif, 'Lilita One';
+    background-color: rgba(41, 23, 0, 0.7);
     color: rgb(255, 183, 0);
     font-size: 12pt;
     border: 1px solid rgb(255, 183, 0);
@@ -80,7 +88,7 @@ body {
 .corNav:hover {
     background-color: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
     color: rgb(255, 183, 0);
-    background: rgb(36, 0, 0);
+    background: rgba(255, 0, 0, 0.672);
 }
 
 .ediText {
@@ -113,9 +121,11 @@ body {
 }
 
 
-/*deixando as labs tranparentes*/
+/*campo transparente de preencher*/
 
-.caixaLogin .campo input {
+.colorCaixa .campo input,
+.colorCaixa .campo textarea,
+.colorCaixa select {
     width: 100%;
     padding: 10px;
     font-size: 17px;
@@ -126,17 +136,16 @@ body {
     outline: none;
     border-bottom: 1px solid #ffffff;
     margin-bottom: 30px;
-    font-family: 'Cinzel', serif;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
 
-.caixaLogin .campo {
+.colorCaixa .campo {
     position: relative;
 }
 
-.caixaLogin .campo label {
+.colorCaixa .campo label {
     position: absolute;
     top: 0;
     left: 0;
@@ -149,31 +158,39 @@ body {
     transition: .5s;
 }
 
-.caixaLogin .campo input:focus~label,
-.caixaLogin .campo input:valid~label {
+.colorCaixa .campo input:focus~label,
+.colorCaixa .campo input:valid~label,
+.colorCaixa .campo textarea:focus~label,
+.colorCaixa .campo textarea:valid~label {
     top: -20px;
     left: 0;
     color: #ffffff;
     font-size: 12px;
 }
 
-
-/*deixando os campos data e select tranparente*/
-
 .textoColor,
-textarea,
 input,
-select {
+select,
+textarea {
     color: #ffffff;
     font-family: 'Cinzel', serif;
     background-color: transparent;
 }
 
-input:focus {
+input:focus,
+textarea:focus,
+select:focus {
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
 }
+
+option.active {
+    background-color: transparent;
+}
+
+
+/*deixando as labs tranparentes*/
 
 a {
     font-family: 'Cinzel', serif;

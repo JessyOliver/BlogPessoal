@@ -19,7 +19,7 @@ body {
     position: relative;
 }
 
-.caixaLogin .campo input {
+.campo input {
     width: 100%;
     padding: 10px;
     font-size: 17px;
@@ -35,11 +35,11 @@ body {
     -moz-box-sizing: border-box;
 }
 
-.caixaLogin .campo input:focus {
+.campo input:focus {
     outline: none;
 }
 
-.caixaLogin .campo {
+.campo {
     position: relative;
 }
 
@@ -56,7 +56,7 @@ select:focus,
     outline: 0;
 }
 
-.caixaLogin .campo label {
+.campo label {
     position: absolute;
     top: 0;
     left: 0;
@@ -69,8 +69,8 @@ select:focus,
     transition: .5s;
 }
 
-.caixaLogin .campo input:focus~label,
-.caixaLogin .campo input:valid~label {
+.campo input:focus~label,
+.campo input:valid~label {
     top: -20px;
     left: 0;
     color: #ffffff;
@@ -85,6 +85,34 @@ select:focus,
     height: 40px;
     border: none;
     outline: none;
+}
+
+
+/*565*/
+
+.preenchido~label {
+    top: -20px;
+    font-size: 12px;
+    outline: none;
+}
+
+.valid~label {
+    top: -20px;
+    font-size: 12px;
+    outline: none;
+}
+
+.valid {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.invalid~label {
+    color: #f5873d;
+}
+
+.invalid {
+    border-bottom: 1px solid #f5873d !important;
 }
 
 
