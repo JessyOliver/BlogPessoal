@@ -118,3 +118,31 @@ h1 {
     color: rgb(255, 183, 0);
     border: 1px solid rgb(3, 202, 43);
 }
+
+
+/*Juan Barros*/
+
+.preenchido~label {
+    top: -20px;
+    font-size: 12px;
+    outline: none;
+}
+
+.valid~label {
+    top: -20px;
+    font-size: 12px;
+    outline: none;
+}
+
+.valid {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.invalid~label {
+    color: #f5873d;
+}
+
+.invalid {
+    border-bottom: 1px solid #f5873d !important;
+}

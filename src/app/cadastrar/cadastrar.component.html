@@ -10,12 +10,12 @@
 
                         <div class="form-group campo">
 
-                            <input type="text" id="nome" class="form-control" required [(ngModel)]="usuarioCad.nome" />
+                            <input type="text" id="nome" class="form-control" required (blur)="validatePreenchido()"  [(ngModel)]="usuarioCad.nome" />
                             <label for="nome"> Nome:</label>
                         </div>
 
                         <div class="form-group campo">
-                            <input type="email" id="usuarioCads" class="form-control" required [(ngModel)]="usuarioCad.usuario" />
+                            <input type="email" id="usuarioCads" class="form-control preencher-validate" required [(ngModel)]="usuarioCad.usuario" />
                             <label for="usuarioCads"> Usuário:</label>
                         </div>
 

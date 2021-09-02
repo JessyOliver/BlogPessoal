@@ -5,11 +5,6 @@
     background-position: center;
 }
 
-a {
-    font-family: 'Cinzel', serif;
-    color: rgb(255, 183, 0);
-}
-
 .ediTitulo {
     margin-top: 3rem;
     text-align: center;
@@ -18,14 +13,33 @@ a {
     font-family: 'Nosifer', cursive;
 }
 
-h5 {
-    color: #fff;
-    font-weight: normal;
-    font-family: 'Cinzel', serif;
-}
-
 
 /*campo transparente*/
+
+.caixaTexto .campo {
+    position: relative;
+}
+
+.caixaTexto .campo label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Cinzel', serif;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.caixaTexto .campo input:focus~label,
+.caixaTexto .campo input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #ffffff;
+    font-size: 12px;
+}
 
 .caixaTexto .campo input {
     width: 100%;
@@ -44,10 +58,6 @@ h5 {
     -moz-box-sizing: border-box;
 }
 
-.caixaTexto .campo {
-    position: relative;
-}
-
 input {
     color: #ffffff;
     font-family: 'Cinzel', serif;
@@ -62,55 +72,13 @@ button:focus {
 }
 
 
-/*editando button*/
-
-.button2 {
-    font-size: 11pt;
-    font-family: 'Cinzel', serif;
-    background-color: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-    color: rgb(252, 252, 252);
-    border: 1px solid rgb(255, 183, 0);
-}
-
-.button2:hover {
-    background-color: rgb(36, 0, 0);
-    color: rgb(255, 183, 0);
-    border: 1px solid rgb(255, 183, 0);
-}
-
-
-/*segundo titulo*/
-
-.ediTitulo2 {
-    margin-top: 3rem;
-    font-size: 3rem;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    text-shadow: 0.1em 0.1em rgba(67, 0, 0, 0.85);
-    font-weight: normal;
-    font-family: 'Nosifer', cursive;
-}
-
-
-/*tabela*/
-
-.tablecor {
-    color: rgb(255, 183, 0);
-    background: linear-gradient(rgba(70, 0, 0, 0.727), rgba(26, 0, 0, 0.59));
-    padding: 1rem;
-    position: relative;
-    font-family: 'Cinzel', serif;
-}
-
-
-/*boto~es de  apagar e editar */
+/*editando os botões*/
 
 .button1 {
     font-size: 11pt;
     font-family: 'Cinzel', serif;
     color: rgb(255, 255, 255);
     border: 1px solid rgb(202, 3, 3);
-    background-color: transparent;
 }
 
 .button1:hover {
@@ -120,23 +88,16 @@ button:focus {
     border: 1px solid rgb(202, 3, 3);
 }
 
-.button3 {
+.button2 {
     font-size: 11pt;
     font-family: 'Cinzel', serif;
     color: rgb(255, 255, 255);
-    border: 1px solid rgb(23, 3, 202);
+    border: 1px solid rgb(3, 202, 43);
 }
 
-.button3:hover {
+.button2:hover {
     font-family: 'Cinzel', serif;
     background-color: rgb(36, 0, 0);
     color: rgb(255, 183, 0);
-    border: 1px solid rgb(13, 3, 202);
-}
-
-
-/*editando campos da tabela*/
-
-.tbodycolo:hover {
-    background-color: rgba(255, 251, 238, 0.33);
+    border: 1px solid rgb(3, 202, 43);
 }

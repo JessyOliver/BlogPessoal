@@ -22,6 +22,26 @@ export class CadastrarComponent implements OnInit {
     window.scroll(0,0)
 
   }
+  
+  ///tratamento d campo email
+  validatePreenchido() {
+    let usuario = <HTMLInputElement>document.getElementById('usuario');
+    
+    if (usuario?.value != '') {
+      usuario.classList.add('preenchido');
+      if (usuario.checkValidity()) {
+        usuario.classList.add('valid');
+        usuario.classList.remove('invalid');
+        usuario.classList.remove('preenchido');
+      } else {
+        usuario.classList.remove('valid');
+        usuario.classList.add('invalid');
+      }
+    } else {
+      usuario.classList.remove('valid');
+      usuario.classList.remove('preenchido');
+    }
+  }
 
   confirmSenha(event: any){
 

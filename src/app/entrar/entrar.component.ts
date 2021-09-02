@@ -55,11 +55,10 @@ export class EntrarComponent implements OnInit {
 
       environment.id = this.usuarioLogin.id
 
-  // console.log( environment.token )    
+      //trazer todos os elementos espcificos 
+  // console.log( environment )   
+  //trazer apenas um elemento 
   // console.log( environment.nome )      
-
-  // console.log( environment.usuario ) 
-  // console.log( environment.id )      
      
 
 

@@ -8,6 +8,8 @@ import {  NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { InicioComponent } from './inicio/inicio.component';
 import { TemaComponent } from './tema/tema.component';
+import { TemaEditarComponent } from './edit/tema-editar/tema-editar.component';
+import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
 
 const routes: Routes = [
 
@@ -25,7 +27,12 @@ const routes: Routes = [
 
   //redirecionando para uma pagina especifica
   {path:'entrar', component: EntrarComponent},
-  {path:'cadastrar', component: CadastrarComponent}
+  {path:'cadastrar', component: CadastrarComponent},
+
+  //parametro por rota para deletar e editar
+  {path:'tema-edit/:id', component: TemaEditarComponent},
+
+  {path:'tema-delete/:id', component: TemaDeleteComponent}
 
 ];
 
