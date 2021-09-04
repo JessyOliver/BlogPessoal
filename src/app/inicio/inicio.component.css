@@ -234,3 +234,38 @@ button:focus {
     border: 0 none;
     outline: 0;
 }
+
+
+/*botões para alterar postagem na tela minhas postagens*/
+
+
+/*boto~es de  apagar e editar */
+
+.buttonEdi1 {
+    font-size: 11pt;
+    font-family: 'Cinzel', serif;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(202, 3, 3);
+    background-color: transparent;
+}
+
+.buttonEdi1:hover {
+    font-family: 'Cinzel', serif;
+    background-color: rgb(36, 0, 0);
+    color: rgb(255, 183, 0);
+    border: 1px solid rgb(202, 3, 3);
+}
+
+.buttonEdi2 {
+    font-size: 11pt;
+    font-family: 'Cinzel', serif;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(23, 3, 202);
+}
+
+.buttonEdi2:hover {
+    font-family: 'Cinzel', serif;
+    background-color: rgb(36, 0, 0);
+    color: rgb(255, 183, 0);
+    border: 1px solid rgb(13, 3, 202);
+}

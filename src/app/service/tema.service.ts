@@ -23,13 +23,11 @@ token = {
   postTema(temaCadastro: Tema): Observable<Tema>{
 
     return this.http.post<Tema>('https://bloghoradoterror.herokuapp.com/tema', temaCadastro, this.token)
-
   }
 
  
 //trazer todos os temas
 getAllTema(): Observable<Tema[]>{
-
   return this.http.get<Tema[]>('https://bloghoradoterror.herokuapp.com/tema', this.token)
 }
 

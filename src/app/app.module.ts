@@ -14,6 +14,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { TemaComponent } from './tema/tema.component';
 import { TemaEditarComponent } from './edit/tema-editar/tema-editar.component';
 import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
+import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
+import { PostagemEditarComponent } from './edit/postagem-editar/postagem-editar.component';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component'
     InicioComponent,
     TemaComponent,
     TemaEditarComponent,
-    TemaDeleteComponent
+    TemaDeleteComponent,
+    PostagemDeleteComponent,
+    PostagemEditarComponent
   ],
   imports: [
     BrowserModule,
