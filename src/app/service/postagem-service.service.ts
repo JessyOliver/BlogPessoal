@@ -35,6 +35,12 @@ getByIdPostagens(id: number): Observable<Postagem>{
 
 }
 
+//buscar por titulo
+getByIdTituloPostagem(titulo: string): Observable<Postagem[]>{
+  return this.http.get<Postagem[]>(`https://bloghoradoterror.herokuapp.com/postagens/titulo/${titulo}`, this.token)
+
+}
+
 //metodo alterar postagens
 putPostagens(postagensEdit: Postagem): Observable<Postagem>{
   return this.http.put<Postagem>('https://bloghoradoterror.herokuapp.com/postagens', postagensEdit, this.token)

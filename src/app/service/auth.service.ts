@@ -32,6 +32,13 @@ token = {
     return this.http.post<Usuario>('https://bloghoradoterror.herokuapp.com/usuario/cadastrar', usuario);
 
   }
+
+    //metodo de cadastrar o usuario
+putUsuario(usuario: Usuario): Observable<Usuario>{
+
+      return this.http.put<Usuario>('https://bloghoradoterror.herokuapp.com/usuario/alterar', usuario);
+  
+    }
   
 
 
@@ -55,6 +62,20 @@ token = {
 
   }
 
+
+  adm(){
+
+    let ok: boolean= false;
+
+    if (environment.tipo == 'adm'){
+
+      ok=true;
+      
+    }
+
+    return ok;
+
+  }
 
   //fim service
 }

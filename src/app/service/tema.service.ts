@@ -32,8 +32,14 @@ getAllTema(): Observable<Tema[]>{
 }
 
 //campo com o conteudo a ser editado
-getByIdTema(id: number){
+getByIdTema(id: number): Observable<Tema>{
   return this.http.get<Tema>(`https://bloghoradoterror.herokuapp.com/tema/${id}`, this.token)
+
+}
+
+//busca por descrição
+getByIdTemaDescricao(descricao: string): Observable<Tema[]>{
+  return this.http.get<Tema[]>(`https://bloghoradoterror.herokuapp.com/tema/descricao/${descricao}`, this.token)
 
 }
 

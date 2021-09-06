@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Usuario} from '../model/Usuario';
+import { AlertasService } from '../service/alertas.service';
 import { AuthService } from '../service/auth.service';
 
 @Component({
@@ -14,7 +15,11 @@ export class CadastrarComponent implements OnInit {
   confirmarSenha: string;
   tipoUsuario: string;
 
-  constructor( private authService: AuthService, private router: Router) { }
+  constructor( 
+               private authService: AuthService, 
+               private router: Router,
+               private alertas: AlertasService 
+  ) { }
 
   
 
@@ -60,18 +65,26 @@ export class CadastrarComponent implements OnInit {
 
     this.usuarioCad.tipo = this.tipoUsuario;
 
-    if (this.usuarioCad.senha != this.confirmarSenha) {
-
-      alert("As senhas estão diferentes.");
+    if (this.usuarioCad.senha.length < 5) {
       
-    } else {
-      this.authService.cadastrar(this.usuarioCad).subscribe((resp: Usuario) =>{
+      this.alertas.showAlertInfo("A senha deve conter no minimo 5 caracteres.");
 
-        this.usuarioCad = resp;
-        this.router.navigate(["/entrar"])
-        alert("Usuário Cadastrado com sucesso!")
-      })
-    }
+    } else {
+
+      if (this.usuarioCad.senha != this.confirmarSenha) {
+
+        this.alertas.showAlertDanger("As senhas estão diferentes.");
+        
+      } else {
+        this.authService.cadastrar(this.usuarioCad).subscribe((resp: Usuario) =>{
+  
+          this.usuarioCad = resp;
+          this.router.navigate(["/entrar"])
+          this.alertas.showAlertSucess("Usuário Cadastrado com sucesso!")
+        })
+      }
+      
+    }    
 
   }
 

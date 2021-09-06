@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
 import { Tema } from '../model/Tema';
+import { AlertasService } from '../service/alertas.service';
 import { TemaService } from '../service/tema.service';
 
 @Component({
@@ -12,7 +13,8 @@ import { TemaService } from '../service/tema.service';
 export class TemaComponent implements OnInit {
 
   constructor(
-    private router: Router, private temaService: TemaService  ) { }
+    private router: Router, private temaService: TemaService,     private alertas: AlertasService 
+    ) { }
 
     temaCad: Tema = new Tema()
     listaTemas: Tema[]
@@ -22,6 +24,13 @@ export class TemaComponent implements OnInit {
     if (environment.token == '') {
       // alert("Sua seção expirou, faça o login novamente.");
       this.router.navigate(['/entrar'])
+      
+    }
+
+    if (environment.tipo != 'adm') {
+      // alert("Sua seção expirou, faça o login novamente.");
+      this.alertas.showAlertInfo('Você precisa ser administrador, para ter acesso a temas.')
+      this.router.navigate(['/inicio'])
       
     }
     //trazer todos os temas
@@ -43,19 +52,21 @@ export class TemaComponent implements OnInit {
 
     this.temaService.postTema(this.temaCad).subscribe((resp: Tema) =>{
 
-        this.temaCad = resp
-        alert('Tema Cadastrado 😊')
+          this.temaCad = resp
+          this.alertas.showAlertSucess('Tema Cadastrado 😊')
         
-
         //apos realizar o cadastro Limpe os campos
         this.temaCad = new Tema()
 
-        
         //depois atualize a nossa lista de temas
         this.findAllTemas()
-
-
-    })
+     
+    }, erro =>{
+      if (erro.status == 500 || erro.status == 400) {
+        this.alertas.showAlertInfo('O seu Tema deve conter, no minimo 10 caracteres, para cadastro!')
+        
+      }
+    }) 
   }
 
 

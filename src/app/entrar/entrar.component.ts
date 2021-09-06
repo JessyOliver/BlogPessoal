@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
 import { UsuarioLogin } from '../model/UsuarioLogin';
+import { AlertasService } from '../service/alertas.service';
 import { AuthService } from '../service/auth.service';
 
 @Component({
@@ -13,7 +14,11 @@ export class EntrarComponent implements OnInit {
 
   usuarioLogin : UsuarioLogin = new UsuarioLogin();
 
-  constructor(private auth: AuthService, private router: Router) { }
+  constructor(
+    private auth: AuthService, 
+    private router: Router,     
+    private alertas: AlertasService 
+    ) { }
 
   ngOnInit() {
     window.scroll(0,0)
@@ -53,21 +58,21 @@ export class EntrarComponent implements OnInit {
 
       environment.imagem_perfil = this.usuarioLogin.imagem_perfil
 
+      environment.tipo = this.usuarioLogin.tipo
+
       environment.id = this.usuarioLogin.id
 
       //trazer todos os elementos espcificos 
   // console.log( environment )   
   //trazer apenas um elemento 
   // console.log( environment.nome )      
-     
-
-
+  
       this.router.navigate(['/inicio'])
 
     }, erro =>{
 
       if (erro.status == 500 || erro.status == 401) {
-        alert('Usuário ou senha inválidos!')
+        this.alertas.showAlertDanger('Usuário ou senha inválidos!')
         
       }
     }) 

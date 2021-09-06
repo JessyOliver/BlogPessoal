@@ -1,31 +1,34 @@
 <body>
-    <div class="container mb-5 mt-5">
+    <div class="container mb-5 mt-5 caixaTexto">
         <div class="row mb-5">
             <div class="col-md-12">
-                <h1 class="text-center text-secondary"> Apagar Tema</h1>
+                <h1 class="ediTitulo mt-5"> Apagar Tema</h1>
             </div>
         </div>
 
         <div class="row mb-3">
-            <div class="col-md-12">
-                <h4 class=" text-center text-secondary">
+            <div class="col-md-12 editTitulo">
+                <h4 class=" text-center">
                     Você tem certeza que desejaapagar esse Tema?🤔<br>Todas as postagens relacionadas a ele, serãoigualmente apagadas.😁
                 </h4>
             </div>
         </div>
-        <div class="row mb-3">
-            <div class="col-md-12">
-                <h5 class=" text-center text-info">
-                    Tema:{{temaDelet.descricao}}
-                </h5>
-            </div>
-        </div>
 
-        <div class="row mb-3">
-            <div class="col-md-12">
-                <button class="btn btn-outline-danger" routerLink='/tema'> Não</button>
-                <button class="btn btn-outline-success" (click)='apagar()'>Sim</button>
+        <div class="row d-flex justify-content-center mt-5">
+            <div class="col-md-6 ">
+                <div class="card-columns d-flex justify-content-center caixaPostagem">
+
+                    <h5 class=" text-center ">
+                        Tema: {{temaDelet.descricao}}
+                    </h5>
+                </div>
+                <div class="d-flex justify-content-center mt-5 mb-5">
+                    <button class="btn  button1  mr-5 px-5" routerLink='/tema'> Não</button>
+                    <button class="btn button2 px-5" (click)='apagar()'>Sim</button>
+                </div>
             </div>
+
+
         </div>
 
     </div>

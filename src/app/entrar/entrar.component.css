@@ -94,6 +94,7 @@ select:focus,
     top: -20px;
     font-size: 12px;
     outline: none;
+    background: transparent;
 }
 
 .valid~label {
@@ -109,10 +110,12 @@ select:focus,
 
 .invalid~label {
     color: #f5873d;
+    background: transparent;
 }
 
 .invalid {
     border-bottom: 1px solid #f5873d !important;
+    background: transparent;
 }
 
 

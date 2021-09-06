@@ -12,6 +12,7 @@ import { TemaEditarComponent } from './edit/tema-editar/tema-editar.component';
 import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
 import { PostagemEditarComponent } from './edit/postagem-editar/postagem-editar.component';
 import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
+import { UserEditComponent } from './edit/user-edit/user-edit.component';
 
 const routes: Routes = [
 
@@ -35,7 +36,10 @@ const routes: Routes = [
 
   //parametro por rota para deletar e editar Postagem
   {path:'postagem-edit/:id', component: PostagemEditarComponent},
-  {path:'postagem-delete/:id', component: PostagemDeleteComponent}
+  {path:'postagem-delete/:id', component: PostagemDeleteComponent},
+
+  //editar ususario
+  {path:'usuario-edit/:id', component: UserEditComponent}
 
 ];
 

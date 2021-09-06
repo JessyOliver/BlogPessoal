@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Postagem } from 'src/app/model/Postagem';
 import { Tema } from 'src/app/model/Tema';
+import { AlertasService } from 'src/app/service/alertas.service';
 import { PostagemServiceService } from 'src/app/service/postagem-service.service';
 import { TemaService } from 'src/app/service/tema.service';
 import { environment } from 'src/environments/environment.prod';
@@ -23,11 +24,14 @@ export class PostagemEditarComponent implements OnInit {
     private router: Router, 
     private postagemService: PostagemServiceService,
     private temaService: TemaService,
-    private route: ActivatedRoute 
+    private route: ActivatedRoute,
+    private alertas: AlertasService 
+ 
 
   ) { }
 
   ngOnInit(){
+    window.scroll(0,0)
       //verificando se o usuario está logado
       if (environment.token == '') {
         // alert("Sua seção expirou, faça o login novamente.");
@@ -73,8 +77,13 @@ this.postageEdit.tema = this.temaEdit
 //ai faz a postagem
 this.postagemService.postPostagem(this.postageEdit).subscribe((resp: Postagem)=>{
   this.postageEdit = resp
-  alert('Postagem cadastrada com sucesso!😉')
+  this.alertas.showAlertSucess('Postagem editada com sucesso!😉')
   this.router.navigate(['/inicio'])
+}, erro =>{
+  if (erro.status == 500 || erro.status == 400) {
+    this.alertas.showAlertInfo('O seu titulo deve conter, no minimo 5 caracteres, e o campo texto deve ter no minimo 10 caracteres para atualizar!')
+    
+  }
 })
 }
 

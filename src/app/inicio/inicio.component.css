@@ -209,7 +209,6 @@ a {
 }
 
 .buttoncli1:hover {
-    font-family: 'Cinzel', serif;
     background-color: rgb(36, 0, 0);
     color: rgb(255, 183, 0);
     border: 1px solid rgb(202, 3, 3);
@@ -223,7 +222,6 @@ a {
 }
 
 .buttoncli2:hover {
-    font-family: 'Cinzel', serif;
     background-color: rgb(36, 0, 0);
     color: rgb(255, 183, 0);
     border: 1px solid rgb(3, 202, 43);
@@ -245,27 +243,76 @@ button:focus {
     font-size: 11pt;
     font-family: 'Cinzel', serif;
     color: rgb(255, 255, 255);
-    border: 1px solid rgb(202, 3, 3);
-    background-color: transparent;
+    border: 1px solid rgb(23, 3, 202);
 }
 
 .buttonEdi1:hover {
-    font-family: 'Cinzel', serif;
     background-color: rgb(36, 0, 0);
     color: rgb(255, 183, 0);
-    border: 1px solid rgb(202, 3, 3);
+    border: 1px solid rgb(13, 3, 202);
 }
 
 .buttonEdi2 {
     font-size: 11pt;
     font-family: 'Cinzel', serif;
     color: rgb(255, 255, 255);
-    border: 1px solid rgb(23, 3, 202);
+    border: 1px solid rgb(202, 3, 3);
+    background-color: transparent;
 }
 
 .buttonEdi2:hover {
-    font-family: 'Cinzel', serif;
     background-color: rgb(36, 0, 0);
     color: rgb(255, 183, 0);
-    border: 1px solid rgb(13, 3, 202);
+    border: 1px solid rgb(202, 3, 3);
+}
+
+
+/*postagens*/
+
+.caixaPostagem {
+    background: linear-gradient(rgba(253, 0, 0, 0.611), rgba(17, 0, 0, 0.919));
+    padding: 1rem;
+    border-radius: 0 2rem 0 2rem;
+    position: relative;
+}
+
+.caixaAltor {
+    background: linear-gradient(rgba(255, 255, 255, 0.213), rgba(255, 183, 0, 0.775));
+    padding: 1rem;
+    border-radius: 0 2rem 0 2rem;
+    position: relative;
+    margin: 0;
+}
+
+.caixaTest {
+    background: linear-gradient(rgba(255, 255, 255, 0.213), rgba(255, 183, 0, 0.775));
+    padding: 1rem;
+    border-radius: 0 2rem 0 2rem;
+    position: relative;
+}
+
+.caixaPostagem h5 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    font-family: 'Cinzel', serif;
+    font-size: 16pt;
+}
+
+.textoP {
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    font-family: 'Cinzel', serif;
+    font-size: 12pt;
+}
+
+.tema {
+    color: #fff;
+    font-family: 'Fjalla One', serif, 'Lilita One';
+    font-size: 15pt;
+}
+
+hr {
+    background-color: rgb(255, 183, 0);
 }
