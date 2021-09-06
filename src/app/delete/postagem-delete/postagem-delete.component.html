@@ -1,0 +1,44 @@
+<body>
+    <div class="container mb-5 mt-5 caixaTexto">
+        <div class="row mb-5">
+            <div class="col-md-12 ">
+                <h1 class="ediTitulo mt-5"> Apagar Postagem</h1>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-12  editTitulo">
+                <h4 class=" text-center ">
+                    Você tem certeza que desejaapagar essa Postagem?🤔 <br> Apagando não tem volta em!😁
+                </h4>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center mt-5  w-100 ">
+            <div class="col-md-6">
+                <div class="card-columns d-flex justify-content-center">
+                    <div class="card mb-3 caixaPostagem" style="max-width: 18rem;">
+                        <div class="card-text">
+                            <div class="card-body ">
+                                <h5 class="card-title m-0">{{postageDel.titulo}}</h5>
+                                <small class=" text-white mt-3 mb-3">Tema: {{postageDel.tema.descricao}}</small>
+                                <p class="card-text textoP mt-3">{{postageDel.texto}}</p>
+                                <p class="card-text">
+                                    <small class="text-white">                                    
+                                    Publicado em: {{postageDel.data | date: 'dd/MM/yyyy'}} ás {{postageDel.data | date: 'HH:mm'}} 
+                                    </small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-5 mb-5">
+                    <button class="btn button1  mr-5 px-5" routerLink='/inicio'> Não</button>
+                    <button class="btn button2 px-5" (click)='apagar()'>Sim</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>

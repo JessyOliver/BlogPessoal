@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lilita+One&display=swap');
+
+/*edit conteudo*/
+
+#img-bg {
+    background-image: linear-gradient(rgba(80, 3, 3, 0.4), rgba(19, 18, 18, 0.4)), url("https://i.imgur.com/4yAAXqS.gif");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.caixaLogin {
+    background: linear-gradient(rgba(33, 1, 1, 0.481), rgba(136, 2, 2, 0.59));
+    padding: 1rem;
+    border-radius: 0;
+    box-shadow: 0 2rem 2rem;
+    position: relative;
+}
+
+.caixaLogin .campo input {
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    background: transparent;
+    color: #ffffff;
+    letter-spacing: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.caixaLogin .campo {
+    position: relative;
+}
+
+.caixaLogin .campo label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Cinzel', serif;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.caixaLogin .campo input:focus~label,
+.caixaLogin .campo input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+
+/*deixando os campos data e select tranparente*/
+
+.textoColor,
+input,
+select {
+    color: #ffffff;
+    font-family: 'Cinzel', serif;
+    background-color: transparent;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+h1 {
+    /* font-family: 'Cinzel', serif; */
+    font-family: 'Nosifer', cursive;
+    font-weight: bold;
+    color: #ffffff;
+    /* text-shadow: 0.1em 0.1em rgba(255, 0, 0, 0.474); */
+    margin-bottom: 2rem;
+}
+
+
+/*editando os botões*/
+
+.button1 {
+    font-size: 11pt;
+    font-family: 'Cinzel', serif;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(202, 3, 3);
+}
+
+.button1:hover {
+    font-family: 'Cinzel', serif;
+    background-color: rgb(36, 0, 0);
+    color: rgb(255, 183, 0);
+    border: 1px solid rgb(202, 3, 3);
+}
+
+.button2 {
+    font-size: 11pt;
+    font-family: 'Cinzel', serif;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(3, 202, 43);
+}
+
+.button2:hover {
+    font-family: 'Cinzel', serif;
+    background-color: rgb(36, 0, 0);
+    color: rgb(255, 183, 0);
+    border: 1px solid rgb(3, 202, 43);
+}
+
+
+/*Juan Barros*/
+
+.preenchido~label {
+    top: -20px;
+    font-size: 12px;
+    outline: none;
+}
+
+.valid~label {
+    top: -20px;
+    font-size: 12px;
+    outline: none;
+}
+
+.valid {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.invalid~label {
+    color: #f5873d;
+}
+
+.invalid {
+    border-bottom: 1px solid #f5873d !important;
+}

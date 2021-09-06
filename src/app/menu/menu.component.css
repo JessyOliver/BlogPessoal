@@ -1,10 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
-
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Nosifer&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lilita+One&display=swap');
-*margin {
+
+/* coomponentes extras *margin {
     margin: 0;
     padding: 0;
 }
@@ -13,16 +10,28 @@ body {
     background-image: linear-gradient(rgba(182, 182, 182, 0.159), rgba(182, 182, 182, 0.138)), url("https://i.imgur.com/FGrvS6j.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
+} */
+
+
+/*conteudo edit pagina*/
+
+.menufundo {
+    background: linear-gradient(rgba(39, 0, 0, 0.035), rgba(255, 123, 0, 0.138));
 }
 
-html {
-    scroll-behavior: smooth;
+p,
+a {
+    color: #ffffff;
+    font-size: 16pt;
+    font-family: 'Cinzel', serif;
 }
 
-.fs-54 {
-    font-size: 44pt;
-}
 
-.fs-18 {
-    font-size: 18pt;
+/* 
+.fs-16 {
+    font-size: 16pt;
+} */
+
+a {
+    cursor: pointer;
 }

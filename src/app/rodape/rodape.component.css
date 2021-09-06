@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+/*coomponentes extras*/
+
+
+/* *margin {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(rgba(182, 182, 182, 0.159), rgba(182, 182, 182, 0.138)), url("https://i.imgur.com/FGrvS6j.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} */
+
+
+/*estilo*/
+
+.footerfundo {
+    background: linear-gradient(rgba(39, 0, 0, 0.159), rgba(255, 123, 0, 0.138));
+    font-family: 'Cinzel', serif;
+}
+
+.footerfundo2 {
+    background: linear-gradient(rgba(55, 1, 1, 0.604), rgba(0, 0, 0, 0.652));
+    font-family: 'Arial', 'Cinzel', serif;
+    font-size: 0.6rem;
+}
+
+ul.social-network {
+    list-style: none;
+    padding: 0;
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0;
+    padding: 5px;
+}
+
+.fa {
+    font-size: 25pt;
+    color: rgb(243, 234, 211);
+    padding: 10px;
+}
+
+.fa-linkedin-square:hover,
+.fa-github-square:hover {
+    color: rgb(255, 183, 0);
+}
+
+h4 {
+    font-size: 1.5rem;
+    color: #ffffff;
+}

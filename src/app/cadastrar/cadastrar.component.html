@@ -1,0 +1,69 @@
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 " id="img-bg"></div>
+            <div class="col-md-6 mt-5 mb-5">
+                <div class="row d-flex justify-content-center">
+
+                    <div class="col-md-10 caixaLogin">
+                        <h1 class="text-center"> CADASTRO </h1>
+
+                        <div class="form-group campo">
+
+                            <input type="text" id="nome" class="form-control" required (blur)="validatePreenchido()"  [(ngModel)]="usuarioCad.nome" />
+                            <label for="nome"> Nome:</label>
+                        </div>
+
+                        <div class="form-group campo">
+                            <input type="email" id="usuarioCads" class="form-control preencher-validate" required [(ngModel)]="usuarioCad.usuario" />
+                            <label for="usuarioCads"> Usuário:</label>
+                        </div>
+
+                        <div class=" form-group campo">
+                            <input type="text" id="foto" class="form-control" required [(ngModel)]="usuarioCad.imagem_perfil" />
+                            <label for="foto"> Link da Foto:</label>
+
+                        </div>
+
+                        <div class=" form-group campo">
+                            <input type="password" id="senha" class="form-control " required (input)='confirmSenha($event)' />
+                            <label for="senha"> Senha:</label>
+
+                        </div>
+
+                        <div class="form-group campo">
+                            <input type="password" id="confirSenha" class="form-control " required [(ngModel)]="usuarioCad.senha" />
+                            <label for="confirSenha "> Confirmar senha:</label>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dataNasc" class="mb-2 textoColor "> Data de Nascimento:</label>
+                            <input class="form-control " type="date" id="dataNasc" name="dataNasc" [(ngModel)]="usuarioCad.dataNascimento" />
+
+
+                        </div>
+
+
+                        <div class="form-group textoColor mt-4 ">
+                            <label for="tipo"> Tipo de Usuário:</label>
+                            <select class="form-control" name="tipo" id="tipo" (change)="tipoUser($event)">
+                                <option >Selecione um tipo de usuário</option>
+                                <option value="normal">Normal</option>
+                                <option value="adm">Administrador</option>
+                            </select>
+                        </div>
+
+                        <div class="d-flex justify-content-around mt-4 mb-3 ">
+                            <button type="submit" class="btn btn-outline-danger px-5 button1" routerLink='/entrar'>Cancelar </button>
+                            <button type="submit" class="btn btn-outline-success px-5 button2" (click)='cadastrar()'>Cadastrar</button>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,318 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lilita+One&display=swap'); */
+
+
+/*edit conteudo*/
+
+
+/* 
+*margin {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(rgba(182, 182, 182, 0.159), rgba(182, 182, 182, 0.138)), url("https://i.imgur.com/FGrvS6j.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} */
+
+.caixaTexto {
+    background-image: linear-gradient(rgba(253, 0, 0, 0.508), rgba(17, 0, 0, 0.953)), url("https://i.imgur.com/AWSuOV9.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.caixaTexto h1 {
+    color: #fff;
+    font-family: 'Cinzel', serif;
+}
+
+.caixaTexto h5 {
+    color: #fff;
+    font-weight: normal;
+    font-family: 'Fjalla One', serif, 'Lilita One';
+}
+
+
+/*editando as cores e efeitos do botão*/
+
+.button1 {
+    font-size: 11pt;
+    font-family: 'Cinzel', serif;
+    background-color: rgb(36, 0, 0);
+    color: rgb(255, 183, 0);
+    border: 1px solid rgb(255, 183, 0);
+}
+
+.button1:hover {
+    color: rgb(252, 252, 252);
+    border: 1px solid rgb(255, 183, 0);
+}
+
+.button2 {
+    font-size: 11pt;
+    font-family: 'Cinzel', serif;
+    background-color: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    color: rgb(252, 252, 252);
+    border: 1px solid rgb(255, 183, 0);
+}
+
+.button2:hover {
+    background-color: rgb(36, 0, 0);
+    color: rgb(255, 183, 0);
+    border: 1px solid rgb(255, 183, 0);
+}
+
+
+/*editando as naves*/
+
+.corNav {
+    font-family: 'Fjalla One', serif, 'Lilita One';
+    background-color: rgba(36, 0, 0, 0.686);
+    color: rgb(255, 183, 0);
+    font-size: 12pt;
+    border: 1px solid rgb(255, 183, 0);
+}
+
+.corNav.active {
+    font-family: 'Fjalla One', serif, 'Lilita One';
+    background-color: rgba(41, 23, 0, 0.7);
+    color: rgb(255, 183, 0);
+    font-size: 12pt;
+    border: 1px solid rgb(255, 183, 0);
+}
+
+.corNav:hover {
+    background-color: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    color: rgb(255, 183, 0);
+    background: rgba(255, 0, 0, 0.672);
+}
+
+.ediText {
+    margin-top: 3rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 0.1em 0.1em rgba(67, 0, 0, 0.85);
+    font-weight: normal;
+    font-family: 'Nosifer', cursive;
+}
+
+
+/*caixa modal*/
+
+.colorCaixa {
+    color: #fff;
+    background: linear-gradient(rgba(70, 0, 0, 0.727), rgba(26, 0, 0, 0.59));
+    padding: 1rem;
+    border-radius: 0;
+    box-shadow: 0 2rem 2rem;
+    position: relative;
+}
+
+.ediTitulo {
+    margin-top: 3rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    font-family: 'Nosifer', cursive;
+}
+
+
+/*campo transparente de preencher*/
+
+.colorCaixa .campo input,
+.colorCaixa .campo textarea,
+.colorCaixa select {
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    background: transparent;
+    color: #ffffff;
+    letter-spacing: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.colorCaixa .campo {
+    position: relative;
+}
+
+.colorCaixa .campo label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Cinzel', serif;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.colorCaixa .campo input:focus~label,
+.colorCaixa .campo input:valid~label,
+.colorCaixa .campo textarea:focus~label,
+.colorCaixa .campo textarea:valid~label {
+    top: -20px;
+    left: 0;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.textoColor,
+input,
+select,
+textarea {
+    color: #ffffff;
+    font-family: 'Cinzel', serif;
+    background-color: transparent;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+option.active {
+    background-color: transparent;
+}
+
+
+/*deixando as labs tranparentes*/
+
+a {
+    font-family: 'Cinzel', serif;
+    color: rgb(255, 183, 0);
+}
+
+
+/*bões modal*/
+
+.buttoncli1 {
+    font-size: 11pt;
+    font-family: 'Cinzel', serif;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(202, 3, 3);
+}
+
+.buttoncli1:hover {
+    background-color: rgb(36, 0, 0);
+    color: rgb(255, 183, 0);
+    border: 1px solid rgb(202, 3, 3);
+}
+
+.buttoncli2 {
+    font-size: 11pt;
+    font-family: 'Cinzel', serif;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(3, 202, 43);
+}
+
+.buttoncli2:hover {
+    background-color: rgb(36, 0, 0);
+    color: rgb(255, 183, 0);
+    border: 1px solid rgb(3, 202, 43);
+}
+
+button:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+
+/*botões para alterar postagem na tela minhas postagens*/
+
+
+/*boto~es de  apagar e editar */
+
+.buttonEdi1 {
+    font-size: 11pt;
+    font-family: 'Cinzel', serif;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(23, 3, 202);
+}
+
+.buttonEdi1:hover {
+    background-color: rgb(36, 0, 0);
+    color: rgb(255, 183, 0);
+    border: 1px solid rgb(13, 3, 202);
+}
+
+.buttonEdi2 {
+    font-size: 11pt;
+    font-family: 'Cinzel', serif;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(202, 3, 3);
+    background-color: transparent;
+}
+
+.buttonEdi2:hover {
+    background-color: rgb(36, 0, 0);
+    color: rgb(255, 183, 0);
+    border: 1px solid rgb(202, 3, 3);
+}
+
+
+/*postagens*/
+
+.caixaPostagem {
+    background: linear-gradient(rgba(253, 0, 0, 0.611), rgba(17, 0, 0, 0.919));
+    padding: 1rem;
+    border-radius: 0 2rem 0 2rem;
+    position: relative;
+}
+
+.caixaAltor {
+    background: linear-gradient(rgba(255, 255, 255, 0.213), rgba(255, 183, 0, 0.775));
+    padding: 1rem;
+    border-radius: 0 2rem 0 2rem;
+    position: relative;
+    margin: 0;
+}
+
+.caixaTest {
+    background: linear-gradient(rgba(255, 255, 255, 0.213), rgba(255, 183, 0, 0.775));
+    padding: 1rem;
+    border-radius: 0 2rem 0 2rem;
+    position: relative;
+}
+
+.caixaPostagem h5 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    font-family: 'Cinzel', serif;
+    font-size: 16pt;
+}
+
+.textoP {
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    font-family: 'Cinzel', serif;
+    font-size: 12pt;
+}
+
+.tema {
+    color: #fff;
+    font-family: 'Fjalla One', serif, 'Lilita One';
+    font-size: 15pt;
+}
+
+hr {
+    background-color: rgb(255, 183, 0);
+}

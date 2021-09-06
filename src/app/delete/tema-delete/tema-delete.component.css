@@ -1,0 +1,64 @@
+.caixaTexto {
+    background-image: linear-gradient(rgba(253, 0, 0, 0.213), rgba(17, 0, 0, 0.775)), url("https://i.imgur.com/2coj17v.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.ediTitulo {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    font-family: 'Nosifer', cursive;
+}
+
+.editTitulo {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    font-family: 'Cinzel', serif;
+}
+
+.caixaPostagem {
+    background: linear-gradient(rgba(253, 0, 0, 0.213), rgba(17, 0, 0, 0.775));
+    padding: 1rem;
+    border-radius: 0 2rem 0 2rem;
+    box-shadow: 0 2rem 2rem;
+    position: relative;
+}
+
+.caixaPostagem h5 {
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    font-family: 'Cinzel', serif;
+    font-size: 16pt;
+}
+
+
+/*editando os botões*/
+
+.button1 {
+    font-size: 15pt;
+    font-family: 'Cinzel', serif;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(202, 3, 3);
+}
+
+.button1:hover {
+    background-color: rgb(36, 0, 0);
+    color: rgb(255, 183, 0);
+    border: 1px solid rgb(202, 3, 3);
+}
+
+.button2 {
+    font-size: 15pt;
+    font-family: 'Cinzel', serif;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(3, 202, 43);
+}
+
+.button2:hover {
+    background-color: rgb(36, 0, 0);
+    color: rgb(255, 183, 0);
+    border: 1px solid rgb(3, 202, 43);
+}

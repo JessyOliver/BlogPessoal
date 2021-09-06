@@ -1,0 +1,103 @@
+.caixaTexto {
+    background-image: linear-gradient(rgba(253, 0, 0, 0.213), rgba(17, 0, 0, 0.227)), url("https://i.imgur.com/2coj17v.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.ediTitulo {
+    margin-top: 3rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    font-family: 'Nosifer', cursive;
+}
+
+
+/*campo transparente*/
+
+.caixaTexto .campo {
+    position: relative;
+}
+
+.caixaTexto .campo label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Cinzel', serif;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.caixaTexto .campo input:focus~label,
+.caixaTexto .campo input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.caixaTexto .campo input {
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    background: transparent;
+    color: #ffffff;
+    letter-spacing: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 30px;
+    font-family: 'Cinzel', serif;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+input {
+    color: #ffffff;
+    font-family: 'Cinzel', serif;
+    background-color: transparent;
+}
+
+input:focus,
+button:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+
+/*editando os botões*/
+
+.button1 {
+    font-size: 11pt;
+    font-family: 'Cinzel', serif;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(202, 3, 3);
+}
+
+.button1:hover {
+    font-family: 'Cinzel', serif;
+    background-color: rgb(36, 0, 0);
+    color: rgb(255, 183, 0);
+    border: 1px solid rgb(202, 3, 3);
+}
+
+.button2 {
+    font-size: 11pt;
+    font-family: 'Cinzel', serif;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(3, 202, 43);
+}
+
+.button2:hover {
+    font-family: 'Cinzel', serif;
+    background-color: rgb(36, 0, 0);
+    color: rgb(255, 183, 0);
+    border: 1px solid rgb(3, 202, 43);
+}
