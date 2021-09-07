@@ -43,10 +43,6 @@ body {
     position: relative;
 }
 
-input:focus {
-    outline: 0;
-}
-
 textarea:focus,
 input:focus,
 select:focus,
@@ -88,16 +84,21 @@ select:focus,
 }
 
 
+/*teste de tranparencia*/
+
+
 /*Juan Barros*/
 
-.preenchido~label {
+.preenchido~label,
+.preenchido~input {
     top: -20px;
     font-size: 12px;
     outline: none;
     background: transparent;
 }
 
-.valid~label {
+.valid~label,
+.valid~input {
     top: -20px;
     font-size: 12px;
     outline: none;
@@ -108,7 +109,8 @@ select:focus,
     border-bottom: 1px solid #fff;
 }
 
-.invalid~label {
+.invalid~label,
+.invalid~input {
     color: #f5873d;
     background: transparent;
 }

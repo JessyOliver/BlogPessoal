@@ -125,8 +125,7 @@ body {
 /*campo transparente de preencher*/
 
 .colorCaixa .campo input,
-.colorCaixa .campo textarea,
-.colorCaixa select {
+.colorCaixa .campo textarea {
     width: 100%;
     padding: 10px;
     font-size: 17px;
@@ -184,10 +183,6 @@ select:focus {
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
-}
-
-option.active {
-    background-color: transparent;
 }
 
 

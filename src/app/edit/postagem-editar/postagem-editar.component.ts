@@ -74,8 +74,9 @@ atualizar(){
 //id do tema
 this.temaEdit.id = this.idTema
 this.postageEdit.tema = this.temaEdit
+
 //ai faz a postagem
-this.postagemService.postPostagem(this.postageEdit).subscribe((resp: Postagem)=>{
+this.postagemService.putPostagens(this.postageEdit).subscribe((resp: Postagem)=>{
   this.postageEdit = resp
   this.alertas.showAlertSucess('Postagem editada com sucesso!😉')
   this.router.navigate(['/inicio'])
